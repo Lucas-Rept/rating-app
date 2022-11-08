@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+#end{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+#end >img + p{
+    color: orange;
+    background-color: rgb(73, 73, 73);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    border-radius: 30px;
+    width: 350px;
+    height: 350px;
+}
+
+#start{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#start p{
+    color: rgb(179, 179, 179);
+}
+
+
+#start > div{
+    background-color: rgb(53, 53, 53);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+li{
+    background-color: rgb(53, 53, 53);
+    width: 50px;
+    height: 50px;
+    color: grey;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+}
+
+ul [sel="0"]:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: grey !important;
+    color: white !important;
+}
+
+button{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+}
+
+button:hover{
+    transition: 0.3s;
+    background-color: white;
+    color: orange;
+    cursor: pointer;
+}
+
+@media screen  and (max-width: 600px){
+    main{
+        width: 90vw;
+        box-sizing: border-box;
+    }
+}
